@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-component {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 60px;
+}
+.container{
+  margin: 40px 0;
+  
+}
+.card {
+  width: 250px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  
+}
+.display-card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content:flex-start;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+  width: 50%;
+  
+  /* border: 1px solid red; */
+  margin: auto;
+  
+}
+.display-card h2{
+  color: crimson;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 0;
+}
+.display-card p{
+  
+  margin: 0;
+}
+.card.selected {
+  background-color:rgb(153, 68, 232)
 }
 
-.App-link {
-  color: #61dafb;
+.display-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin-bottom: 10px; */
+  /* margin-top: 35px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+  
 }
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color:crimson;
+}
+
+@media (max-width: 500px) {
+ .display-card {
+  flex-direction: column;
+ }
+ .display-card h2{
+  font-size: 2rem;
+  text-align: center;
+ 
+ }
+ .display-card p {
+  text-align: center;
+ }
+  }
